@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Calculadora</h1>
+        <h3 class="subtitle">Captura el valor 1</h3>
+        <input class="input" type="number" name="v1" id="v1"><br>
+        <h3 class="subtitle">Captura el valor 2</h3>
+        <input class="input" type="number" name="v2" id="v2"><br>
+        <div class="button-container">
+            <button class="button" type="button" onclick="calcular('sum')">Sumar</button>
+            <button class="button" type="button" onclick="calcular('sub')">Restar</button>
+            <button class="button" type="button" onclick="calcular('mul')">Multiplicar</button>
+            <button class="button" type="button" onclick="calcular('div')">Dividir</button>
+        </div>
+        
+        <h3 class="subtitle">Resultado </h3>
+        <h3 class="result" id="res"></h3>
+    </div>
+    <script src="../calculadora/calculadora.js"></script>
+</body>
+</html>
